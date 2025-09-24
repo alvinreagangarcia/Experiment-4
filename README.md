@@ -1,5 +1,5 @@
 # Experiment-4
-
+PROBLEM 1
 Part A
 ```python
 df = pd.read_excel("board2.xlsx")
@@ -42,3 +42,22 @@ Pick only female students from Mindanao whose average score is 55 or above, then
 print(mindy)
 ```
 Display the Mindy DataFrame.
+
+PROBLEM 2
+```python
+plt.figure(figsize=(7,5))
+sns.barplot(x="Track", y="Average", data=bd)
+plt.title("Average Score by Track")
+plt.show()
+
+plt.figure(figsize=(5,4))
+sns.barplot(x="Gender", y="Average", data=bd)
+plt.title("Average Score by Gender")
+plt.show()
+
+plt.figure(figsize=(6,4))
+sns.barplot(x="Hometown", y="Average", data=bd)
+plt.title("Average Score by Hometown")
+plt.show()
+```
+I made a barplot for Track, Gender, Hometown, against the average
